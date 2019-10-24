@@ -1,7 +1,3 @@
-## Производство деревянных панелей
-
-* * *
-
 ### Примеры работ
 
 *   ![Фото 1](/woodendaySite/assets/img/gallery_own/photo1.jpg)
