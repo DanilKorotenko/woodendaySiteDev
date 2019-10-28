@@ -5,4 +5,4 @@
     .image-gallery a img {width: 100%; display: block;}
 </style>
 
-<p class="image-gallery">{% for file in site.static_files %}{{ file.path }}{% endfor %}</p>
+<p class="image-gallery">{% for file in site.static_files %}{% if file.path contains include.folder %}{{ file.path }}{% endif %}{% endfor %}</p>
