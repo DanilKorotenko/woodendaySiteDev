@@ -5,4 +5,4 @@
     .image-gallery a img {width: 100%; display: block;}
 </style>
 
-{% for file in site.static_files %}{{ file.path }}{% endfor %}
+<p class="image-gallery">{% for file in site.static_files %}{{ file.path }}{% endfor %}</p>
