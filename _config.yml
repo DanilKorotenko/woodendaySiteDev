@@ -4,3 +4,4 @@ show_downloads: "true"
 theme: jekyll-theme-minimal
 lang: ru
 shortcut_icon: /assets/img/logo.png
+google_analytics: UA-134263384-1
