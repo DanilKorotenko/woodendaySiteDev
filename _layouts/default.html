@@ -17,6 +17,9 @@
 
 	<link rel="sitemap" type="application/xml" title="Sitemap" href={{ "/sitemap.xml" | relative_url }} />
 
+	<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+	{% include lightbox.html %}
+
   </head>
   <body>
     <div class="wrapper">
@@ -61,8 +64,6 @@
       </footer>
  -->
     </div>
-	<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-	{% include lightbox.html %}
     <script src="{{ "/assets/js/scale.fix.js" | relative_url }}"></script>
     {% if site.google_analytics %}
     <script>
