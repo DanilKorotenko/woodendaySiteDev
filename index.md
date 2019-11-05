@@ -2,7 +2,7 @@
 
 ### Примеры работ
 
-{% include image-gallery.html folder="/assets/img/galleries/own" %}
+{% include image-gallery.html folder="/assets/img/galleries/own"  %}
 
 ### Каталог материалов
 
