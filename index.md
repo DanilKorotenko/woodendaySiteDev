@@ -14,4 +14,3 @@
 
 {% include image-gallery.html folder="/assets/img/galleries/woods/soft" %}
 
-Панели из дерева.
