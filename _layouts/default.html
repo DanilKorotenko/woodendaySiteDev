@@ -15,7 +15,7 @@
 
 	<script type="text/javascript">window.$crisp=[];window.CRISP_WEBSITE_ID="fbcaa7a2-d767-42bb-939b-15f3029357b3";(function(){d=document;s=d.createElement("script");s.src="https://client.crisp.chat/l.js";s.async=1;d.getElementsByTagName("head")[0].appendChild(s);})();</script>
 
-	<link rel="sitemap" type="application/xml" title="Sitemap" href={{ "/sitemap.xml" | relative_url }} />
+	<link rel="sitemap" type="application/xml" title="Sitemap" href="/sitemap.xml">
 
 	<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
 	{% include lightbox.html %}
@@ -27,7 +27,7 @@
         <h1><a href="{{ "/" | absolute_url }}">{{ site.title | default: site.github.repository_name }}</a></h1>
 
         {% if site.logo %}
-          <a href="{{ "/" | absolute_url }}"><img src="{{site.logo | relative_url}}" alt="Logo" /></a>
+          <a href="{{ "/" | absolute_url }}"><img src="{{site.logo | relative_url}}" alt="Logo"> </a>
         {% endif %}
 
         <p>{{ site.description | default: site.github.project_tagline }}</p>
@@ -44,9 +44,9 @@
 
         {% if site.show_downloads %}
         <ul class="downloads">
-          <li><a href="https://www.facebook.com/woodendaywood/"><img border="0" src={{ "/assets/img/fb_logo.png" | relative_url }} width="30" height="30" title="Мы в Facebook"></a></li>
-          <li><a href="https://www.instagram.com/woodenday_panels/"><img border="0" src={{ "/assets/img/insta_logo.png" | relative_url }} width="30" height="30" title="Мы в Instagram"></a></li>
-          <li><a href="tel:+380951193343"><img border="0" src={{ "/assets/img/call_logo.png" | relative_url }} width="30" height="30" title="Позвонить"></a></li>
+          <li><a href="https://www.facebook.com/woodendaywood/"><img border="0" src="/assets/img/fb_logo.png" width="30" height="30" title="Мы в Facebook"></a></li>
+          <li><a href="https://www.instagram.com/woodenday_panels/"><img border="0" src="/assets/img/insta_logo.png" width="30" height="30" title="Мы в Instagram"></a></li>
+          <li><a href="tel:+380951193343"><img border="0" src="/assets/img/call_logo.png" width="30" height="30" title="Позвонить"></a></li>
         </ul>
         {% endif %}
       </header>

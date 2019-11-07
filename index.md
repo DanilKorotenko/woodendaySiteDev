@@ -13,3 +13,4 @@
 #### Мягкие породы
 
 {% include image-gallery.html folder="/assets/img/galleries/woods/soft" %}
+
