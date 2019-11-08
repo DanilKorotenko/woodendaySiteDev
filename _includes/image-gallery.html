@@ -5,9 +5,9 @@
     .image-gallery a img {width: 100%; display: block;}
 </style>
 
-<p> {{ include.previewsFolder }} </p>
-<p> {{ include.folder }} </p>
-<p> {{ include.titles }} </p>
+<!--<p> {{ include.previewsFolder }} </p>-->
+<!--<p> {{ include.folder }} </p>-->
+<!--<p> {{ include.titles }} </p>-->
 
 <p class="image-gallery">
 {%- for file in site.static_files -%}
@@ -26,7 +26,7 @@
                 {%- assign filenameWithExt = filenameparts | last -%}
                 {%- assign pathToPreview = filenameWithExt | prepend: include.previewsFolder -%}
                 <a href="{{ file.path | relative_url }}" title="{{ title }}">
-                    <img src="{{ pathToPreview }}" alt="{{ title }}" title="{{ title }}" />
+                    <img src="{{ pathToPreview | relative_url }}" alt="{{ title }}" title="{{ title }}" />
                     <span>{{ title }}</span>
                 </a>
             {%- else -%}
