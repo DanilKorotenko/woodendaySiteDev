@@ -5,6 +5,10 @@
     .image-gallery a img {width: 100%; display: block;}
 </style>
 
+<p> {{ include.previewsFolder }} </p>
+<p> {{ include.folder }} </p>
+<p> {{ include.titles }} </p>
+
 <p class="image-gallery">
 {%- for file in site.static_files -%}
 	{%- if file.path contains include.folder -%}
@@ -25,7 +29,7 @@
                     <img src="{{ pathToPreview }}" alt="{{ title }}" title="{{ title }}" />
                     <span>{{ title }}</span>
                 </a>
-            {%- else-%}
+            {%- else -%}
                 <a href="{{ file.path | relative_url }}" title="{{ title }}">
                     <img src="//images.weserv.nl/?url={{ site.url | replace: 'http://','' | replace: 'https://','' }}{{ file.path | relative_url }}&w=300&h=300&output=jpg&q=50&t=square" alt="{{ title }}" title="{{ title }}" />
                     <span>{{ title }}</span>
