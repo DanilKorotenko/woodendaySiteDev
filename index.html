@@ -1,19 +1,35 @@
 ---
 layout: default
+
+Acacia: Акация
+Dub_(Oak): Дуб
+Ebony: Эбеновое дерево
+Kedr_(Cedar): Кедр
+Oreh_(Wallnut): Колумбийский орех
+Yasen_(Ash): Ясень
+Lipa_(Linden): Липа
+Olha_(Alder): Ольха
+Sosna_(Pine): Сосна
 ---
+
+<!--{% for title in page.galleriesTitles.hard.titles %}-->
+<!--  <li>-->
+      {{ page.galleriesTitles }}
+<!--  </li>-->
+<!--{% endfor %}-->
 
 <h2> Производство деревянных панелей </h2>
 
 <h3> Примеры работ </h3>
 
-{% include image-gallery.html folder="/assets/img/galleries/own" %}
+{% include image-gallery.html folder="/assets/img/galleries/own/" previewsFolder="/assets/img/galleries/own/previews/" %}
 
 <h3> Каталог материалов </h3>
 
 <h4> Твердые породы </h4>
 
-{% include image-gallery.html folder="/assets/img/galleries/woods/hard" %}
+{% include image-gallery.html folder="/assets/img/galleries/woods/hard/" previewsFolder="/assets/img/galleries/woods/hard/previews/" titles=true %}
 
 <h4> Мягкие породы </h4>
 
-{% include image-gallery.html folder="/assets/img/galleries/woods/soft" %}
+{% include image-gallery.html folder="/assets/img/galleries/woods/soft/" previewsFolder="/assets/img/galleries/woods/soft/previews/" titles=true %}
