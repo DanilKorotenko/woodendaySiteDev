@@ -133,6 +133,11 @@ function is_vimeolink(url,el) {
 }
 
 $(document).ready(function() {
+var titlesMap = new Map();
+{%- for fileTitle in site.data.imageTitles.titles -%}
+titlesMap.set("{{ fileTitle.filename }}", "{{fileTitle.title}}");
+{%- endfor -%}
+
 	//add classes to links to be able to initiate lightboxes
 	$("a").each(function(){
 		var url = $(this).attr('href');
@@ -145,6 +150,10 @@ $(document).ready(function() {
 				var filename = href.split('/').pop();
 				var split = filename.split(".");
 				var name = split[0];
+                if (titlesMap.get(name))
+                {
+                    name = titlesMap.get(name);
+                }
 				$(this).attr('title',name);
 			}
 		}
