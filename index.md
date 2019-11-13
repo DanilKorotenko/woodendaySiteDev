@@ -1,15 +1,5 @@
 ---
 layout: default
-
-Acacia: Акация
-Dub_(Oak): Дуб
-Ebony: Эбеновое дерево
-Kedr_(Cedar): Кедр
-Oreh_(Wallnut): Колумбийский орех
-Yasen_(Ash): Ясень
-Lipa_(Linden): Липа
-Olha_(Alder): Ольха
-Sosna_(Pine): Сосна
 ---
 
 ## Производство деревянных панелей

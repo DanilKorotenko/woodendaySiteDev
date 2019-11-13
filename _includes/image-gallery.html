@@ -16,14 +16,16 @@
 			{%- assign filenameparts = file.path | split: "/" -%}
 			{%- assign filename = filenameparts | last | replace: file.extname,"" -%}
 
-            
-
             {%- if include.titles -%}
-                {%- assign title = page[filename] -%}
-{%- if title -%}
-{%- else -%}
-{%- assign title = filename -%}
-{%- endif -%}
+                {%- for fileTitle in site.data.imageTitles.titles -%}
+                    {%- if fileTitle.filename contains filename -%}
+                        {%- assign title = fileTitle.title -%}
+                    {%- endif -%}
+                {%- endfor -%}
+                {%- if title -%}
+                {%- else -%}
+                    {%- assign title = filename -%}
+                {%- endif -%}
             {%- endif -%}
 
             {%- if include.previewsFolder -%}

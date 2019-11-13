@@ -1,27 +1,27 @@
 titles:
 - filename: Acacia
-  translation: Акация
+  title: Акация
 
 - filename: Dub_(Oak)
-  translation: Дуб
+  title: Дуб
 
 - filename: Ebony
-  translation: Эбеновое дерево
+  title: Эбеновое дерево
 
 - filename: Kedr_(Cedar)
-  translation: Кедр
+  title: Кедр
 
 - filename: Oreh_(Wallnut)
-  translation: Колумбийский орех
+  title: Колумбийский орех
 
 - filename: Yasen_(Ash)
-  translation: Ясень
+  title: Ясень
 
 - filename: Lipa_(Linden)
-  translation: Липа
+  title: Липа
 
 - filename: Olha_(Alder)
-  translation: Ольха
+  title: Ольха
 
 - filename: Sosna_(Pine)
-  translation: Сосна
+  title: Сосна
