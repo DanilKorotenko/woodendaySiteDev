@@ -33,12 +33,12 @@
                 {%- if include.previewsFolder -%}
                     {%- assign filenameWithExt = filenameparts | last -%}
                     {%- assign pathToPreview = filenameWithExt | prepend: include.previewsFolder -%}
-                    <a href="{{ file.path | relative_url }}" title="{{ title }}">
+                    <a href="{{ file.path | relative_url }}" title="{{ title }}" onClick="ga('send','event','imageClick','click','imageView', 0)">
                         <img src="{{ pathToPreview | relative_url }}" alt="{{ title }}" title="{{ title }}" />
                         <span>{{ title }}</span>
                     </a>
                 {%- else -%}
-                    <a href="{{ file.path | relative_url }}" title="{{ title }}">
+                    <a href="{{ file.path | relative_url }}" title="{{ title }}" onClick="ga('send','event','imageClick','click','imageView', 0)">
                         <img src="//images.weserv.nl/?url={{ site.url | replace: 'http://','' | replace: 'https://','' }}{{ file.path | relative_url }}&w=300&h=300&output=jpg&q=50&t=square" alt="{{ title }}" title="{{ title }}" />
                         <span>{{ title }}</span>
                     </a>
