@@ -6,12 +6,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
 {% seo %}
+
+
+  <title>{{ site.title }}</title>
+  <meta name="description" content="{{ site.description }}">
+
+  <link rel="shortcut icon" type="image/png" href="{{ site.shortcut_icon | relative_url }}">
+  <link rel="apple-touch-icon" href="{{ site.shortcut_icon | relative_url }}">
+
+   <!-- Facebook and Twitter integration -->
+  <meta property="og:title" content="{{ site.title }}"/>
+  <meta property="og:image" content="{{ site.shortcut_icon | relative_url }}"/>
+  <meta property="og:site_name" content="{{ site.title }}"/>
+  <meta property="og:description" content="{{ site.description }}"/>
+
     <link rel="stylesheet" href="{{ "/assets/css/style.css?v=" | append: site.github.build_revision | relative_url }}">
     <!--[if lt IE 9]>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
     <![endif]-->
-
-    <link rel="shortcut icon" type="image/png" href="{{ site.shortcut_icon | relative_url }}">
 
 	<script type="text/javascript">window.$crisp=[];window.CRISP_WEBSITE_ID="fbcaa7a2-d767-42bb-939b-15f3029357b3";(function(){d=document;s=d.createElement("script");s.src="https://client.crisp.chat/l.js";s.async=1;d.getElementsByTagName("head")[0].appendChild(s);})();</script>
 
