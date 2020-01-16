@@ -1,9 +1,12 @@
 ---
 layout: default
 title: Дизайны интерьеров
+galleries:
+- title: Спальня
+  image: "/assets/img/galleries/interriors/bedroom_1/previews/photo_3.jpg"
+  url: "/interriors/bedroom/bedroom_1.html"
 ---
 
-### Дизайн спальни
+### Примеры интерьеров
 
-{% include image-gallery.html folder="/assets/img/galleries/interriors/bedroom_1/" previewsFolder="/assets/img/galleries/interriors/bedroom_1/previews/" titles=false %}
-
+{% include image-gallery-index.html %}
