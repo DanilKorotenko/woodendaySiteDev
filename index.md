@@ -2,6 +2,12 @@
 layout: default
 ---
 
-### Примеры работ
+### Кроватки Детские
 
-{% include image-gallery.html folder="/assets/img/galleries/own/" previewsFolder="/assets/img/galleries/own/previews/"  %}
+#### Светлая
+
+{% include image-gallery.html folder="/assets/img/galleries/kinderBed/light" previewsFolder="/assets/img/galleries/kinderBed/light/preview/" %}
+
+#### Темная
+
+{% include image-gallery.html folder="/assets/img/galleries/kinderBed/dark" previewsFolder="/assets/img/galleries/kinderBed/dark/preview/" %}
