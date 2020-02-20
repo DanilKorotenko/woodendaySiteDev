@@ -1,15 +1,15 @@
 ---
 layout: default
+galleries:
+- title: Светлая
+  image: "/assets/img/galleries/kinderBed/light/preview/photo_26.jpg"
+  url: "/kinderBeds/light.html"
+- title: Темная
+  image: "/assets/img/galleries/kinderBed/dark/preview/photo_18.jpg"
+  url: "/kinderBeds/dark.html"
+
 ---
 
 ### Кроватки Детские
 
-{% include kinderBedCollectorCode2.html %}
-
-#### Светлая
-
-{% include image-gallery.html folder="/assets/img/galleries/kinderBed/light" previewsFolder="/assets/img/galleries/kinderBed/light/preview/" %}
-
-#### Темная
-
-{% include image-gallery.html folder="/assets/img/galleries/kinderBed/dark" previewsFolder="/assets/img/galleries/kinderBed/dark/preview/" %}
+{% include image-gallery-index_2_col.html %}
