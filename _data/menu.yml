@@ -4,11 +4,13 @@ items:
 - title: Кроватки Детские
   url: /
 
-- title: Примеры наших работ
-  url: /ourWork.html
+- title: Деревянные панели
+  subitems:
+    - title: Примеры наших работ
+      url: /ourWork.html
 
-- title: Дизайны интерьеров
-  url: /interriors.html
+    - title: Дизайны интерьеров
+      url: /interriors.html
 
-- title: Материалы
-  url: /materials.html
+    - title: Материалы
+      url: /materials.html

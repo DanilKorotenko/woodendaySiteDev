@@ -1,9 +1,22 @@
-<style>
-</style>
 
-<h4>{{ site.data.menu.title }}</h2>
-{% for item in site.data.menu.items %}
+<h4>{{ site.data.menu.title }}</h4>
+{%- for item in site.data.menu.items -%}
 <p>
+    {%- if item.url -%}
     <a href="{{ item.url | absolute_url }}">{{ item.title }}</a>
+    {%- else -%}
+    {{ item.title }}
+        {%- if item.subitems -%}
+            {%- for subitem in item.subitems -%}
+            <p>
+                {%- if subitem.url -%}
+                <a class="menu" href="{{ subitem.url | absolute_url }}">{{ subitem.title }}</a>
+                {%- else -%}
+                {{ subitem.title }}
+                {%- endif -%}
+            {%- endfor -%}
+            </p>
+        {%- endif -%}
+    {%- endif -%}
 </p>
-{% endfor %}
+{%- endfor -%}
