@@ -5,7 +5,7 @@ galleries:
   image: "/assets/img/galleries/kinderBed/light/preview/photo_26.jpg"
   url: "/kinderBeds/light.html"
 - title: Светлая 2
-  image: "/assets/img/galleries/kinderBed/light_2/photo_10.jpg"
+  image: "/assets/img/galleries/kinderBed/light_2/preview/photo_10.jpg"
   url: "/kinderBeds/light_2.html"
 - title: Темная
   image: "/assets/img/galleries/kinderBed/dark/preview/photo_18.jpg"
