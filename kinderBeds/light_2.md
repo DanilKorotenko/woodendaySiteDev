@@ -3,7 +3,7 @@ layout: default
 title: Кроватка светлая
 ---
 
-{% include kinderBedCollectorCode_light.html %}
+{% include kinderBedCollectorCode_light_2.html %}
 
 #### Светлая 2
 
