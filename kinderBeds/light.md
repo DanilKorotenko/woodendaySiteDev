@@ -7,6 +7,6 @@ title: Кроватка детская
 
 #### Кроватка детская
 
-{% include image-gallery.html folder="/assets/img/galleries/kinderBed/light" %}
+{% include image-gallery.html folder="/assets/img/galleries/kinderBed/light/" %}
 
 <a href="{{ "/"  | relative_url }}" title="Назад"><span>&#8592;Назад</span></a>
